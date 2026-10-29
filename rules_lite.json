@@ -1,0 +1,41 @@
+[
+ {
+  "id": 101,
+  "priority": 1,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "resourceTypes": [
+    "image",
+    "media",
+    "font",
+    "stylesheet"
+   ],
+   "initiatorDomains": [
+    "yelp.com",
+    "yelp.ca",
+    "yelp.co.uk",
+    "yelp.com.au",
+    "yelp.com.sg",
+    "yelp.de",
+    "yelp.fr",
+    "yelp.es",
+    "yelp.it",
+    "yelp.nl",
+    "yelp.ch",
+    "yelp.at",
+    "yelp.be",
+    "yelp.se",
+    "yelp.no",
+    "yelp.dk",
+    "yelp.fi",
+    "yelp.pl",
+    "yelp.pt",
+    "yelp.ie",
+    "yelp.co.nz",
+    "yelp.co.jp"
+   ]
+  }
+ }
+]

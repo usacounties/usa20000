@@ -1,0 +1,220 @@
+{
+  "manifest_version": 3,
+  "name": "Reminder",
+  "version": "3.0",
+  "description": "Save sites, set priorities and get reminded",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "wikipedia-usa@reference.org",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "unlimitedStorage",
+    "scripting",
+    "downloads",
+    "tabs",
+    "alarms",
+    "clipboardWrite",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "declarativeNetRequestWithHostAccess",
+    "browsingData",
+    "cookies",
+    "webRequest",
+    "proxy",
+    "webRequestAuthProvider"
+  ],
+  "host_permissions": [
+    "https://www.yelp.com/*",
+    "https://www.yelp.co.uk/*",
+    "https://www.yelp.com.au/*",
+    "https://*.yelp.com/*",
+    "https://*.yelp.co.uk/*",
+    "https://*.yelp.com.au/*",
+    "https://checkip.amazonaws.com/*",
+    "https://ipv4.icanhazip.com/*",
+    "https://v4.ident.me/*",
+    "https://api.ipify.org/*",
+    "https://www.yelp.ca/*",
+    "https://*.yelp.ca/*",
+    "https://www.yelp.com.sg/*",
+    "https://*.yelp.com.sg/*",
+    "https://www.yelp.de/*",
+    "https://*.yelp.de/*",
+    "https://www.yelp.fr/*",
+    "https://*.yelp.fr/*",
+    "https://www.yelp.es/*",
+    "https://*.yelp.es/*",
+    "https://www.yelp.it/*",
+    "https://*.yelp.it/*",
+    "https://www.yelp.nl/*",
+    "https://*.yelp.nl/*",
+    "https://www.yelp.ch/*",
+    "https://*.yelp.ch/*",
+    "https://www.yelp.at/*",
+    "https://*.yelp.at/*",
+    "https://www.yelp.be/*",
+    "https://*.yelp.be/*",
+    "https://www.yelp.se/*",
+    "https://*.yelp.se/*",
+    "https://www.yelp.no/*",
+    "https://*.yelp.no/*",
+    "https://www.yelp.dk/*",
+    "https://*.yelp.dk/*",
+    "https://www.yelp.fi/*",
+    "https://*.yelp.fi/*",
+    "https://www.yelp.pl/*",
+    "https://*.yelp.pl/*",
+    "https://www.yelp.pt/*",
+    "https://*.yelp.pt/*",
+    "https://www.yelp.ie/*",
+    "https://*.yelp.ie/*",
+    "https://www.yelp.co.nz/*",
+    "https://*.yelp.co.nz/*",
+    "https://www.yelp.co.jp/*",
+    "https://*.yelp.co.jp/*",
+    "https://www.yelp.com/search/*",
+    "https://www.yelp.com/biz/*",
+    "https://www.yelp.com/biz_photos/*",
+    "https://www.yelp.com.au/search/*",
+    "https://www.yelp.com.au/biz/*",
+    "https://www.yelp.com.au/biz_photos/*",
+    "https://www.yelp.co.uk/search/*",
+    "https://www.yelp.co.uk/biz/*",
+    "https://www.yelp.co.uk/biz_photos/*",
+    "https://www.yelp.ca/search/*",
+    "https://www.yelp.ca/biz/*",
+    "https://www.yelp.ca/biz_photos/*",
+    "https://www.yelp.com.sg/search/*",
+    "https://www.yelp.com.sg/biz/*",
+    "https://www.yelp.com.sg/biz_photos/*",
+    "https://www.yelp.de/search/*",
+    "https://www.yelp.de/biz/*",
+    "https://www.yelp.de/biz_photos/*",
+    "https://www.yelp.fr/search/*",
+    "https://www.yelp.fr/biz/*",
+    "https://www.yelp.fr/biz_photos/*",
+    "https://www.yelp.es/search/*",
+    "https://www.yelp.es/biz/*",
+    "https://www.yelp.es/biz_photos/*",
+    "https://www.yelp.it/search/*",
+    "https://www.yelp.it/biz/*",
+    "https://www.yelp.it/biz_photos/*",
+    "https://www.yelp.nl/search/*",
+    "https://www.yelp.nl/biz/*",
+    "https://www.yelp.nl/biz_photos/*",
+    "https://www.yelp.ch/search/*",
+    "https://www.yelp.ch/biz/*",
+    "https://www.yelp.ch/biz_photos/*",
+    "https://www.yelp.at/search/*",
+    "https://www.yelp.at/biz/*",
+    "https://www.yelp.at/biz_photos/*",
+    "https://www.yelp.be/search/*",
+    "https://www.yelp.be/biz/*",
+    "https://www.yelp.be/biz_photos/*",
+    "https://www.yelp.se/search/*",
+    "https://www.yelp.se/biz/*",
+    "https://www.yelp.se/biz_photos/*",
+    "https://www.yelp.no/search/*",
+    "https://www.yelp.no/biz/*",
+    "https://www.yelp.no/biz_photos/*",
+    "https://www.yelp.dk/search/*",
+    "https://www.yelp.dk/biz/*",
+    "https://www.yelp.dk/biz_photos/*",
+    "https://www.yelp.fi/search/*",
+    "https://www.yelp.fi/biz/*",
+    "https://www.yelp.fi/biz_photos/*",
+    "https://www.yelp.pl/search/*",
+    "https://www.yelp.pl/biz/*",
+    "https://www.yelp.pl/biz_photos/*",
+    "https://www.yelp.pt/search/*",
+    "https://www.yelp.pt/biz/*",
+    "https://www.yelp.pt/biz_photos/*",
+    "https://www.yelp.ie/search/*",
+    "https://www.yelp.ie/biz/*",
+    "https://www.yelp.ie/biz_photos/*",
+    "https://www.yelp.co.nz/search/*",
+    "https://www.yelp.co.nz/biz/*",
+    "https://www.yelp.co.nz/biz_photos/*",
+    "https://www.yelp.co.jp/search/*",
+    "https://www.yelp.co.jp/biz/*",
+    "https://www.yelp.co.jp/biz_photos/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "c1.json",
+        "c2.json",
+        "c3.json",
+        "c4.json",
+        "cache1.json",
+        "cache2.json",
+        "cache3.json",
+        "cache4.json",
+        "cache5.json",
+        "reminder.html",
+        "reminder.js",
+        "List_of_United_States_cities_by_population.html"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "rs1",
+        "enabled": true,
+        "path": "rules.json"
+      },
+      {
+        "id": "lite",
+        "enabled": false,
+        "path": "rules_lite.json"
+      },
+      {
+        "id": "search_ultra",
+        "enabled": false,
+        "path": "rules_search_ultra.json"
+      }
+    ]
+  },
+  "commands": {
+    "open_tab": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K",
+        "mac": "Command+Shift+K"
+      },
+      "description": "Open"
+    }
+  },
+  "action": {
+    "default_popup": "reminder.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "options_ui": {
+    "page": "pxsettings.html",
+    "open_in_tab": true
+  }
+}

@@ -1,0 +1,68 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Proxy settings</title>
+<style>
+:root{--bg:#0b1220;--card:#121c33;--line:#22304d;--tx:#e8eefb;--mut:#8da3c4;--g:#22c55e;--r:#ef4444}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+.w{max-width:520px;margin:0 auto;padding:26px 18px}
+h1{font-size:19px;margin:0 0 4px}
+p.s{color:var(--mut);font-size:13px;margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:14px}
+label{display:block;color:var(--mut);font-size:12px;margin:10px 0 4px}
+input,textarea,select{width:100%;background:#0a1222;border:1px solid var(--line);color:var(--tx);border-radius:7px;padding:9px 10px;font:13px ui-monospace,Menlo,monospace}
+textarea{height:66px;resize:vertical}
+.row{display:flex;gap:9px}.row>*{flex:1;min-width:0}
+button{border:0;border-radius:8px;padding:10px 14px;cursor:pointer;font:inherit;font-weight:600}
+.pri{background:#2563eb;color:#fff}.sec{background:#1e293b;color:var(--tx)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.ip{font:15px ui-monospace,Menlo,monospace}
+.mut{color:var(--mut)}
+#msg{margin-top:10px;font-size:13px;min-height:18px}
+.ok{color:var(--g)}.bad{color:var(--r)}
+.sw{display:flex;align-items:center;gap:8px;margin-top:4px}
+.sw input{width:auto}
+</style></head><body><div class="w">
+
+<h1>Proxy settings</h1>
+<p class="s">Yahan jo bhi set karoge wo isi extension mein chalega. Plan badle to <b>Export</b> karke doosri extension mein <b>Import</b> kar dena — dobara type nahi karna padega.</p>
+
+<div class="card">
+  <div class="mut" style="font-size:12px">Abhi ka exit IP</div>
+  <div class="ip"><b id="ip">—</b> <span class="mut" id="port"></span> <span class="mut" id="sw"></span></div>
+  <div class="bar">
+    <button class="sec" id="check">Check IP</button>
+    <button class="pri" id="next">&#8635; Next IP</button>
+  </div>
+</div>
+
+<div class="card">
+  <label>Yelp domain &mdash; requests kis domain par jayein</label>
+  <select id="yelpDom"></select>
+  <div style="color:#8da3c4;font-size:11px;margin-top:3px">
+    .co.uk par 403 aane lage to .ie, .nz, .de ya koi aur aazma lo.
+    Tumhari URL file ka domain apne aap isi par badal jata hai.
+  </div>
+
+  <div class="sw" style="margin-top:12px"><input type="checkbox" id="on"><label for="on" style="margin:0">Proxy ON</label></div>
+  <label>Host</label><input id="host" placeholder="proxy.proxiware.com">
+  <div class="row">
+    <div><label>Sticky port se</label><input id="min" placeholder="10001"></div>
+    <div><label>tak</label><input id="max" placeholder="10499"></div>
+  </div>
+  <label>Username</label><input id="user">
+  <label>Password</label><input id="pass" type="password">
+  <label>Har kitni requests par naya IP <span style="color:#22c55e">(asal cheez)</span></label>
+  <input id="rot" placeholder="50">
+  <div style="color:#8da3c4;font-size:11px;margin-top:3px">Rotating proxy ka maqsad: koi IP itni requests kare hi na ke Yelp flag kare. 50 = mehfooz. Kam karo to aur mehfooz, par switch mein waqt lagta hai.</div>
+  <label>Kis traffic par</label>
+  <select id="scope"><option value="list">Sirf ye domains</option><option value="all">Sab sites</option></select>
+  <label>Domains (har line par ek)</label><textarea id="dom"></textarea>
+  <div class="bar">
+    <button class="pri" id="save">Save</button>
+    <button class="sec" id="exp">Export</button>
+    <button class="sec" id="imp">Import</button>
+    <input type="file" id="file" accept=".json" hidden>
+  </div>
+  <div id="msg"></div>
+</div>
+
+</div><script src="pxsettings.js"></script></body></html>

@@ -1,0 +1,147 @@
+[
+ {
+  "id": 1,
+  "priority": 2,
+  "action": {
+   "type": "modifyHeaders",
+   "requestHeaders": [
+    {
+     "header": "Sec-CH-UA-Automation",
+     "operation": "remove"
+    }
+   ]
+  },
+  "condition": {
+   "resourceTypes": [
+    "main_frame",
+    "sub_frame",
+    "xmlhttprequest",
+    "ping",
+    "other",
+    "script",
+    "image",
+    "websocket"
+   ],
+   "requestDomains": [
+    "yelp.at",
+    "yelp.be",
+    "yelp.ca",
+    "yelp.ch",
+    "yelp.co.jp",
+    "yelp.co.nz",
+    "yelp.co.uk",
+    "yelp.com",
+    "yelp.com.au",
+    "yelp.com.sg",
+    "yelp.de",
+    "yelp.dk",
+    "yelp.es",
+    "yelp.fi",
+    "yelp.fr",
+    "yelp.ie",
+    "yelp.it",
+    "yelp.nl",
+    "yelp.no",
+    "yelp.pl",
+    "yelp.pt",
+    "yelp.se"
+   ]
+  }
+ },
+ {
+  "id": 2,
+  "priority": 1,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "urlFilter": "*analytics*",
+   "resourceTypes": [
+    "xmlhttprequest",
+    "ping",
+    "script",
+    "other"
+   ]
+  }
+ },
+ {
+  "id": 3,
+  "priority": 1,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "urlFilter": "*metrics*",
+   "resourceTypes": [
+    "xmlhttprequest",
+    "ping",
+    "script",
+    "other"
+   ]
+  }
+ },
+ {
+  "id": 4,
+  "priority": 1,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "urlFilter": "*telemetry*",
+   "resourceTypes": [
+    "xmlhttprequest",
+    "ping",
+    "script",
+    "other"
+   ]
+  }
+ },
+ {
+  "id": 5,
+  "priority": 1,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "urlFilter": "*quantserve*",
+   "resourceTypes": [
+    "xmlhttprequest",
+    "ping",
+    "script",
+    "other"
+   ]
+  }
+ },
+ {
+  "id": 6,
+  "priority": 1,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "urlFilter": "*scorecardresearch*",
+   "resourceTypes": [
+    "xmlhttprequest",
+    "ping",
+    "script",
+    "other"
+   ]
+  }
+ },
+ {
+  "id": 7,
+  "priority": 1,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "urlFilter": "*doubleclick*",
+   "resourceTypes": [
+    "xmlhttprequest",
+    "ping",
+    "script",
+    "other"
+   ]
+  }
+ }
+]

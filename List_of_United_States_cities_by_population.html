@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0NyIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjNmI2YjZiIiBzdHJva2Utd2lkdGg9IjMiLz48ZyBmaWxsPSJub25lIiBzdHJva2U9IiM5YzljOWMiIHN0cm9rZS13aWR0aD0iMi41Ij48ZWxsaXBzZSBjeD0iNTAiIGN5PSI1MCIgcng9IjQ3IiByeT0iMTciLz48ZWxsaXBzZSBjeD0iNTAiIGN5PSI1MCIgcng9IjQ3IiByeT0iMzQiLz48bGluZSB4MT0iMyIgeTE9IjUwIiB4Mj0iOTciIHkyPSI1MCIvPjxlbGxpcHNlIGN4PSI1MCIgY3k9IjUwIiByeD0iMTciIHJ5PSI0NyIvPjxlbGxpcHNlIGN4PSI1MCIgY3k9IjUwIiByeD0iMzQiIHJ5PSI0NyIvPjxsaW5lIHgxPSI1MCIgeTE9IjMiIHgyPSI1MCIgeTI9Ijk3Ii8+PC9nPjx0ZXh0IHg9IjUwIiB5PSI3MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSI2NCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsJ1RpbWVzIE5ldyBSb21hbicsc2VyaWYiIGZpbGw9IiMyMDIxMjIiIHN0eWxlPSJwYWludC1vcmRlcjpzdHJva2U7c3Ryb2tlOiNmZmY7c3Ryb2tlLXdpZHRoOjEwcHg7Ij5XPC90ZXh0Pjwvc3ZnPg==">
+<title>List of United States cities by population - Wikipedia</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:100%;background:#fff;font-family:'Linux Libertine','Georgia',Times,serif;font-size:14px;color:#202122;line-height:1.6;padding:14px 22px 20px;max-width:1180px;margin:0 auto;}
+
+.whd{display:flex;align-items:flex-start;gap:12px;padding-bottom:9px;}
+.wlt{font-family:'Linux Libertine',Georgia,serif;font-size:17px;color:#202122;line-height:1.05;letter-spacing:.5px;}
+.wls{font-size:9px;color:#54595d;font-family:sans-serif;letter-spacing:.7px;margin-top:2px;}
+.wsr{margin-left:auto;display:flex;}
+.wsr input{width:190px;padding:5px 9px;font-size:12px;border:1px solid #a2a9b1;border-right:none;border-radius:2px 0 0 2px;font-family:sans-serif;outline:none;color:#333;}
+.wsr button{padding:5px 11px;font-size:11px;background:#f8f9fa;border:1px solid #a2a9b1;border-radius:0 2px 2px 0;cursor:pointer;color:#202122;font-family:sans-serif;}
+.wtabs{display:flex;border-bottom:1px solid #a2a9b1;padding-left:2px;}
+.wtab{padding:4px 13px;font-size:12px;font-family:sans-serif;color:#0645ad;border:1px solid #a2a9b1;border-bottom:none;background:#f8f9fa;margin-right:2px;margin-bottom:-1px;cursor:pointer;border-radius:2px 2px 0 0;}
+.wtab.on{background:#fff;color:#202122;border-bottom:1px solid #fff;}
+.wsub{display:flex;justify-content:flex-end;gap:12px;font-size:11px;font-family:sans-serif;color:#0645ad;padding:4px 2px 0;}
+.wsub span{cursor:pointer;}
+.wsub span:hover{text-decoration:underline;}
+h1.wt{font-family:'Linux Libertine',Georgia,serif;font-size:26px;font-weight:normal;border-bottom:1px solid #a2a9b1;padding-bottom:4px;margin:9px 0 3px;line-height:1.3;}
+.wfrom{font-size:11px;color:#54595d;font-family:sans-serif;font-style:italic;margin-bottom:11px;}
+.wcont{display:grid;grid-template-columns:1fr 230px;gap:20px;}
+.wbody p{margin-bottom:11px;font-size:13.5px;line-height:1.7;}
+.wbody h2{font-family:'Linux Libertine',Georgia,serif;font-size:18px;font-weight:normal;border-bottom:1px solid #a2a9b1;margin:14px 0 8px;padding-bottom:3px;}
+a.wl{color:#0645ad;text-decoration:none;}
+a.wl:hover{text-decoration:underline;}
+table.wtb{width:100%;border-collapse:collapse;font-size:12px;font-family:sans-serif;margin-bottom:12px;border:1px solid #a2a9b1;}
+table.wtb caption{font-size:10.5px;color:#54595d;text-align:left;padding-bottom:4px;font-style:italic;}
+table.wtb th{background:#eaecf0;border:1px solid #a2a9b1;padding:5px 8px;text-align:left;font-weight:bold;color:#202122;}
+table.wtb td{border:1px solid #a2a9b1;padding:4px 8px;}
+table.wtb tr:nth-child(even) td{background:#f8f9fa;}
+tr.grp{cursor:pointer;}
+tr.grp:hover>td{background:#eaf3ff!important;}
+/* done = invisible hint: rank number ka rang balke ek shade halka */
+tr.grp.gd>td:first-child{color:#3d4548;}
+/* running = rank number ke baad chhota sa dot */
+tr.grp.gr>td:first-child::after{content:'\00b7';margin-left:3px;color:#9aa;}
+.wib{background:#f8f9fa;border:1px solid #a2a9b1;font-family:sans-serif;font-size:11.5px;}
+.wibt{background:#cee0f2;text-align:center;padding:6px;font-weight:bold;font-size:12px;border-bottom:1px solid #a2a9b1;}
+.wibm{width:100%;border-bottom:1px solid #a2a9b1;overflow:hidden;background:#fff;padding:5px 4px 3px;box-sizing:border-box;}
+.wlg{font-size:8.5px;color:#202122;padding:4px 6px 6px;line-height:1.5;}
+.wlg span{display:inline-block;margin-right:7px;white-space:nowrap;}
+.wlg i{display:inline-block;width:11px;height:11px;border:1px solid #333;vertical-align:-2px;margin-right:3px;}
+.wibc{font-size:9.5px;color:#54595d;text-align:center;padding:4px 6px;border-bottom:1px solid #a2a9b1;font-style:italic;line-height:1.35;}
+.wib table{width:100%;}
+.wib td{padding:3px 6px;vertical-align:top;border-bottom:1px solid #e8ebee;}
+.wib td:first-child{font-weight:bold;color:#54595d;white-space:nowrap;width:50%;}
+.wib tr:last-child td{border-bottom:none;}
+.wtoc{background:#f8f9fa;border:1px solid #a2a9b1;font-family:sans-serif;font-size:11.5px;padding:9px 13px;display:inline-block;margin-bottom:11px;min-width:190px;}
+.wtoct{font-weight:bold;font-size:12px;margin-bottom:6px;text-align:center;}
+.wtoc ol{padding-left:18px;margin:0;}
+.wtoc li{margin-bottom:2px;color:#0645ad;cursor:pointer;line-height:1.45;}
+.wcat{border:1px solid #a2a9b1;background:#f8f9fa;padding:6px 10px;margin-top:12px;font-size:10.5px;font-family:sans-serif;}
+.wcat b{margin-right:6px;}
+.wcat a{color:#0645ad;text-decoration:none;margin-right:9px;}
+.ctl{border-top:1px solid #f1f1f1;padding-top:5px;margin-top:9px;font-family:sans-serif;}
+.crow{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin-bottom:3px;}
+.cv{font-size:6.5px;color:#d5d5d5;line-height:1.6;}
+.cv:hover{color:#666;}
+.tb{font-size:6.5px;color:#d5d5d5;border:.5px solid #f2f2f2;border-radius:2px;padding:0 4px;cursor:pointer;background:#fff;line-height:1.6;font-family:sans-serif;text-decoration:none;display:inline-block;}
+.tb:hover{color:#444;border-color:#bbb;background:#f7f7f7;}
+.tin{font-size:6.5px;border:.5px solid #f2f2f2;border-radius:2px;padding:1px 3px;color:#aaa;outline:none;width:80px;font-family:sans-serif;}
+.tta{font-size:6.5px;border:.5px solid #f2f2f2;border-radius:2px;padding:2px;font-family:monospace;color:#bbb;outline:none;width:100%;min-height:22px;resize:vertical;}
+.csep{color:#f2f2f2;font-size:6px;}
+.clog{font-size:6px;color:#e2e2e2;font-family:monospace;max-height:28px;overflow-y:auto;line-height:1.55;white-space:pre-wrap;margin-top:2px;}
+.clog:hover{color:#777;}
+.ctrk{height:2px;background:#f7f7f7;border-radius:2px;overflow:hidden;flex:1;min-width:45px;}
+.ctrk>i{display:block;height:100%;width:0;background:#e5e5e5;transition:width .4s;}
+.hide{display:none!important;}
+#fileInput{display:none;}
+#collectionsWrap,#permGroups,#permMode{display:none;}
+</style>
+</head>
+<body>
+
+<div class="whd">
+  <svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="gg" cx="34%" cy="28%" r="78%">
+        <stop offset="0%" stop-color="#ffffff"/><stop offset="60%" stop-color="#f4f4f4"/>
+        <stop offset="100%" stop-color="#d4d4d4"/>
+      </radialGradient>
+    </defs>
+    <circle cx="50" cy="50" r="45" fill="url(#gg)" stroke="#7a7a7a" stroke-width="1.5"/>
+    <g fill="none" stroke="#9c9c9c" stroke-width="1" opacity=".9">
+      <ellipse cx="50" cy="50" rx="45" ry="13"/><ellipse cx="50" cy="50" rx="45" ry="28"/>
+      <ellipse cx="50" cy="50" rx="45" ry="39"/><line x1="5" y1="50" x2="95" y2="50"/>
+      <ellipse cx="50" cy="50" rx="13" ry="45"/><ellipse cx="50" cy="50" rx="28" ry="45"/>
+      <ellipse cx="50" cy="50" rx="39" ry="45"/><line x1="50" y1="5" x2="50" y2="95"/>
+    </g>
+    <text x="50" y="69" text-anchor="middle" font-size="56"
+          font-family="'Linux Libertine','Georgia',serif" fill="#1c1c1c"
+          style="paint-order:stroke;stroke:#fff;stroke-width:6px;">W</text>
+  </svg>
+  <div>
+    <div class="wlt">WIKIPEDIA</div>
+    <div class="wls">The Free Encyclopedia</div>
+  </div>
+  <div class="wsr">
+    <input type="text" placeholder="Search Wikipedia">
+    <button>Search</button>
+  </div>
+</div>
+
+<div class="wtabs">
+  <div class="wtab on">Article</div>
+  <div class="wtab">Talk</div>
+</div>
+<div class="wsub"><span>Read</span><span>Edit</span><span>Edit source</span><span>View history</span><span>Tools</span></div>
+
+<h1 class="wt">List of United States cities by population</h1>
+<div class="wfrom">From Wikipedia, the free encyclopedia</div>
+
+<div class="wcont">
+  <div class="wbody">
+    <p>This is a list of the most populous <a class="wl" href="#">incorporated places</a> of the <a class="wl" href="#">United States</a>. As defined by the <a class="wl" href="#">United States Census Bureau</a>, an "incorporated place" includes cities, towns, villages, boroughs, and municipalities. A few exceptions in <a class="wl" href="#">New England</a> are also included.</p>
+
+    <div class="wtoc">
+      <div class="wtoct">Contents</div>
+      <ol>
+        <li>100 most populous cities</li>
+        <li>Population by region</li>
+        <li>Metropolitan areas</li>
+        <li>Historical population</li>
+        <li>See also</li>
+      </ol>
+    </div>
+
+    <p>There are 333 incorporated places in the United States with a population of over 100,000 as of <a class="wl" href="#">July 1, 2024</a>, including the 100 largest cities of the United States by population.</p>
+
+    <h2>100 most populous cities</h2>
+    <p>The following table lists the largest incorporated places in the United States by population, using estimates from the <a class="wl" href="#">2020 census</a> and 2023 population estimates.</p>
+
+    <table class="wtb">
+      <caption>Population estimates, 2020–2023</caption>
+      <tr><th>2023 rank</th><th>City</th><th>State</th><th>2023 estimate</th><th>2020 census</th><th>Change</th></tr>
+      <tr class="grp" data-c="c1" data-i="0" data-l="1"><td>1</td><td><a class="wl">New York City</a></td><td><a class="wl">New York</a></td><td>8,258,035</td><td>8,804,190</td><td>−6.20%</td></tr>
+      <tr class="grp" data-c="c1" data-i="1" data-l="2"><td>2</td><td><a class="wl">Los Angeles</a></td><td><a class="wl">California</a></td><td>3,820,914</td><td>3,898,747</td><td>−2.00%</td></tr>
+      <tr class="grp" data-c="c1" data-i="2" data-l="3"><td>3</td><td><a class="wl">Chicago</a></td><td><a class="wl">Illinois</a></td><td>2,664,452</td><td>2,746,388</td><td>−2.98%</td></tr>
+      <tr class="grp" data-c="c1" data-i="3" data-l="4"><td>4</td><td><a class="wl">Houston</a></td><td><a class="wl">Texas</a></td><td>2,314,157</td><td>2,304,580</td><td>+0.42%</td></tr>
+      <tr class="grp" data-c="c1" data-i="4" data-l="5"><td>5</td><td><a class="wl">Phoenix</a></td><td><a class="wl">Arizona</a></td><td>1,650,070</td><td>1,608,139</td><td>+2.61%</td></tr>
+      <tr class="grp" data-c="c1" data-i="5" data-l="6"><td>6</td><td><a class="wl">Philadelphia</a></td><td><a class="wl">Pennsylvania</a></td><td>1,550,542</td><td>1,603,797</td><td>−3.32%</td></tr>
+      <tr class="grp" data-c="c1" data-i="6" data-l="7"><td>7</td><td><a class="wl">San Antonio</a></td><td><a class="wl">Texas</a></td><td>1,495,295</td><td>1,434,625</td><td>+4.23%</td></tr>
+      <tr class="grp" data-c="c1" data-i="7" data-l="8"><td>8</td><td><a class="wl">San Diego</a></td><td><a class="wl">California</a></td><td>1,388,320</td><td>1,386,932</td><td>+0.10%</td></tr>
+      <tr class="grp" data-c="c1" data-i="8" data-l="9"><td>9</td><td><a class="wl">Dallas</a></td><td><a class="wl">Texas</a></td><td>1,302,868</td><td>1,304,379</td><td>−0.12%</td></tr>
+      <tr class="grp" data-c="c1" data-i="9" data-l="10"><td>10</td><td><a class="wl">Jacksonville</a></td><td><a class="wl">Florida</a></td><td>985,843</td><td>949,611</td><td>+3.82%</td></tr>
+      <tr class="grp" data-c="c1" data-i="10" data-l="11"><td>11</td><td><a class="wl">Austin</a></td><td><a class="wl">Texas</a></td><td>979,882</td><td>961,855</td><td>+1.87%</td></tr>
+      <tr class="grp" data-c="c1" data-i="11" data-l="12"><td>12</td><td><a class="wl">Fort Worth</a></td><td><a class="wl">Texas</a></td><td>978,468</td><td>918,915</td><td>+6.48%</td></tr>
+      <tr class="grp" data-c="c1" data-i="12" data-l="13"><td>13</td><td><a class="wl">San Jose</a></td><td><a class="wl">California</a></td><td>969,655</td><td>1,013,240</td><td>−4.30%</td></tr>
+      <tr class="grp" data-c="c1" data-i="13" data-l="14"><td>14</td><td><a class="wl">Columbus</a></td><td><a class="wl">Ohio</a></td><td>913,175</td><td>905,748</td><td>+0.82%</td></tr>
+      <tr class="grp" data-c="c1" data-i="14" data-l="15"><td>15</td><td><a class="wl">Charlotte</a></td><td><a class="wl">North Carolina</a></td><td>911,311</td><td>874,579</td><td>+4.20%</td></tr>
+      <tr class="grp" data-c="c1" data-i="15" data-l="16"><td>16</td><td><a class="wl">Indianapolis</a></td><td><a class="wl">Indiana</a></td><td>879,293</td><td>887,642</td><td>−0.94%</td></tr>
+      <tr class="grp" data-c="c1" data-i="16" data-l="17"><td>17</td><td><a class="wl">San Francisco</a></td><td><a class="wl">California</a></td><td>808,988</td><td>873,965</td><td>−7.43%</td></tr>
+      <tr class="grp" data-c="c1" data-i="17" data-l="18"><td>18</td><td><a class="wl">Seattle</a></td><td><a class="wl">Washington</a></td><td>755,078</td><td>737,015</td><td>+2.45%</td></tr>
+      <tr class="grp" data-c="c2" data-i="0" data-l="19"><td>19</td><td><a class="wl">Denver</a></td><td><a class="wl">Colorado</a></td><td>716,577</td><td>715,522</td><td>+0.15%</td></tr>
+      <tr class="grp" data-c="c2" data-i="1" data-l="20"><td>20</td><td><a class="wl">Oklahoma City</a></td><td><a class="wl">Oklahoma</a></td><td>702,767</td><td>681,054</td><td>+3.19%</td></tr>
+      <tr class="grp" data-c="c2" data-i="2" data-l="21"><td>21</td><td><a class="wl">Nashville</a></td><td><a class="wl">Tennessee</a></td><td>687,788</td><td>689,447</td><td>−0.24%</td></tr>
+      <tr class="grp" data-c="c3" data-i="0" data-l="22"><td>22</td><td><a class="wl">Washington</a></td><td><a class="wl">District of Columbia</a></td><td>678,972</td><td>689,545</td><td>−1.53%</td></tr>
+      <tr class="grp" data-c="c3" data-i="1" data-l="23"><td>23</td><td><a class="wl">El Paso</a></td><td><a class="wl">Texas</a></td><td>678,815</td><td>678,815</td><td>+0.00%</td></tr>
+      <tr class="grp" data-c="c3" data-i="2" data-l="24"><td>24</td><td><a class="wl">Las Vegas</a></td><td><a class="wl">Nevada</a></td><td>660,929</td><td>641,903</td><td>+2.96%</td></tr>
+      <tr class="grp" data-c="c3" data-i="3" data-l="25"><td>25</td><td><a class="wl">Boston</a></td><td><a class="wl">Massachusetts</a></td><td>653,833</td><td>675,647</td><td>−3.23%</td></tr>
+      <tr class="grp" data-c="c3" data-i="4" data-l="26"><td>26</td><td><a class="wl">Portland</a></td><td><a class="wl">Oregon</a></td><td>630,498</td><td>652,503</td><td>−3.37%</td></tr>
+      <tr class="grp" data-c="c3" data-i="5" data-l="27"><td>27</td><td><a class="wl">Detroit</a></td><td><a class="wl">Michigan</a></td><td>633,218</td><td>639,111</td><td>−0.92%</td></tr>
+      <tr class="grp" data-c="c3" data-i="6" data-l="28"><td>28</td><td><a class="wl">Louisville</a></td><td><a class="wl">Kentucky</a></td><td>622,981</td><td>633,045</td><td>−1.59%</td></tr>
+      <tr class="grp" data-c="c3" data-i="7" data-l="29"><td>29</td><td><a class="wl">Memphis</a></td><td><a class="wl">Tennessee</a></td><td>618,639</td><td>633,104</td><td>−2.29%</td></tr>
+      <tr class="grp" data-c="c3" data-i="8" data-l="30"><td>30</td><td><a class="wl">Baltimore</a></td><td><a class="wl">Maryland</a></td><td>565,239</td><td>585,708</td><td>−3.49%</td></tr>
+      <tr class="grp" data-c="c3" data-i="9" data-l="31"><td>31</td><td><a class="wl">Milwaukee</a></td><td><a class="wl">Wisconsin</a></td><td>561,385</td><td>577,222</td><td>−2.74%</td></tr>
+      <tr class="grp" data-c="c3" data-i="10" data-l="32"><td>32</td><td><a class="wl">Albuquerque</a></td><td><a class="wl">New Mexico</a></td><td>560,274</td><td>564,559</td><td>−0.76%</td></tr>
+      <tr class="grp" data-c="c3" data-i="11" data-l="33"><td>33</td><td><a class="wl">Tucson</a></td><td><a class="wl">Arizona</a></td><td>547,239</td><td>542,629</td><td>+0.85%</td></tr>
+      <tr class="grp" data-c="c3" data-i="12" data-l="34"><td>34</td><td><a class="wl">Fresno</a></td><td><a class="wl">California</a></td><td>545,567</td><td>542,107</td><td>+0.64%</td></tr>
+      <tr class="grp" data-c="c3" data-i="13" data-l="35"><td>35</td><td><a class="wl">Sacramento</a></td><td><a class="wl">California</a></td><td>526,384</td><td>524,943</td><td>+0.27%</td></tr>
+      <tr class="grp" data-c="c3" data-i="14" data-l="36"><td>36</td><td><a class="wl">Mesa</a></td><td><a class="wl">Arizona</a></td><td>511,648</td><td>504,258</td><td>+1.47%</td></tr>
+      <tr class="grp" data-c="c4" data-i="0" data-l="37"><td>37</td><td><a class="wl">Atlanta</a></td><td><a class="wl">Georgia</a></td><td>510,823</td><td>498,715</td><td>+2.43%</td></tr>
+      <tr class="grp" data-c="c4" data-i="1" data-l="38"><td>38</td><td><a class="wl">Kansas City</a></td><td><a class="wl">Missouri</a></td><td>510,704</td><td>508,090</td><td>+0.51%</td></tr>
+      <tr class="grp" data-c="c4" data-i="2" data-l="39"><td>39</td><td><a class="wl">Colorado Springs</a></td><td><a class="wl">Colorado</a></td><td>488,664</td><td>478,961</td><td>+2.03%</td></tr>
+    </table>
+
+    <h2>Population by region</h2>
+    <p>The <a class="wl" href="#">Northeast</a> region contains some of the most densely populated cities in the country. <a class="wl">New York City</a> has been the most populous city in the United States since the first census in <a class="wl" href="#">1790</a>. The <a class="wl" href="#">South</a> and <a class="wl" href="#">West</a> regions have experienced the greatest population growth in recent decades.</p>
+
+    <h2>Metropolitan areas</h2>
+    <p>When considering <a class="wl" href="#">metropolitan statistical areas</a> rather than city proper populations, the rankings shift considerably. The <a class="wl" href="#">New York metropolitan area</a> remains the largest with approximately 19.5 million residents.</p>
+
+    <div class="wcat">
+      <b>Categories:</b>
+      <a href="#">Lists of cities in the United States</a>
+      <a href="#">Population lists</a>
+      <a href="#">Demographics of the United States</a>
+    </div>
+  </div>
+
+  <div>
+    <div class="wib">
+      <div class="wibt">Largest U.S. cities</div>
+      <div class="wibm">
+        <svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;">
+          <g stroke="#8c8c8c" stroke-width="1.1" stroke-linejoin="round">
+          <path fill="#62a957" d="M62,62 L152,52 L156,110 L64,116 Z"/>
+          <path fill="#9fce92" d="M64,116 L156,110 L162,180 L52,186 Z"/>
+          <path fill="#62a957" d="M52,186 L120,182 L134,240 L166,306 L178,368 L152,414 L120,398 L96,330 L70,258 Z"/>
+          <path fill="#9fce92" d="M120,182 L206,190 L208,290 L166,306 L134,240 Z"/>
+          <path fill="#d8ebd0" d="M152,52 L216,56 L212,134 L206,190 L120,182 L156,110 Z"/>
+          <path fill="#d8ebd0" d="M216,56 L372,50 L374,138 L212,134 Z"/>
+          <path fill="#9fce92" d="M212,134 L374,138 L376,212 L206,208 Z"/>
+          <path fill="#9fce92" d="M206,208 L274,210 L276,292 L208,290 Z"/>
+          <path fill="#62a957" d="M274,210 L348,212 L348,294 L276,292 Z"/>
+          <path fill="#d8ebd0" d="M166,306 L208,290 L274,292 L272,392 L184,394 Z"/>
+          <path fill="#d8ebd0" d="M274,292 L348,294 L350,392 L272,392 Z"/>
+          <path fill="#9fce92" d="M374,50 L474,54 L474,120 L374,120 Z"/>
+          <path fill="#9fce92" d="M374,120 L474,120 L476,190 L376,190 Z"/>
+          <path fill="#9fce92" d="M348,212 L376,212 L376,190 L476,190 L478,252 L348,254 Z"/>
+          <path fill="#9fce92" d="M348,254 L478,252 L480,316 L350,318 Z"/>
+          <path fill="#d8ebd0" d="M350,318 L480,316 L484,378 L352,380 Z"/>
+          <path fill="#9fce92" d="M272,392 L350,392 L352,380 L484,378 L500,424 L486,472 L456,512 L424,496 L400,450 L366,432 L296,424 Z"/>
+          <path fill="#62a957" d="M474,54 L558,58 L562,146 L474,146 Z"/>
+          <path fill="#9fce92" d="M474,146 L562,146 L566,198 L476,190 Z"/>
+          <path fill="#9fce92" d="M476,190 L566,198 L574,266 L562,300 L556,292 L482,288 Z"/>
+          <path fill="#d8ebd0" d="M482,288 L556,292 L562,300 L564,352 L486,350 Z"/>
+          <path fill="#d8ebd0" d="M486,350 L564,352 L568,404 L534,416 L498,400 L484,378 Z"/>
+          <path fill="#9fce92" d="M560,90 L616,104 L622,166 L566,198 L562,146 Z"/>
+          <path fill="#9fce92" d="M616,104 L646,84 L678,102 L676,152 L648,176 L622,166 Z"/>
+          <path fill="#9fce92" d="M584,60 L636,52 L648,80 L616,96 Z"/>
+          <path fill="#62a957" d="M566,198 L620,190 L632,240 L620,286 L572,268 Z"/>
+          <path fill="#9fce92" d="M622,190 L660,192 L662,260 L622,282 Z"/>
+          <path fill="#9fce92" d="M660,192 L676,168 L706,186 L714,246 L664,258 Z"/>
+          <path fill="#d8ebd0" d="M574,266 L620,286 L662,260 L714,246 L722,274 L660,302 L604,300 L562,300 Z"/>
+          <path fill="#d8ebd0" d="M562,300 L604,300 L660,302 L724,292 L726,320 L620,328 L564,332 Z"/>
+          <path fill="#ffffff" d="M564,332 L606,328 L612,408 L568,404 Z"/>
+          <path fill="#d8ebd0" d="M606,328 L650,324 L656,404 L612,408 Z"/>
+          <path fill="#9fce92" d="M650,324 L702,320 L718,366 L702,412 L656,404 Z"/>
+          <path fill="#9fce92" d="M702,412 L718,366 L754,372 L774,406 L786,452 L784,494 L764,502 L750,468 L734,434 L716,424 Z"/>
+          <path fill="#d8ebd0" d="M702,320 L748,342 L724,374 L702,352 Z"/>
+          <path fill="#9fce92" d="M702,320 L726,292 L790,304 L782,330 L748,342 Z"/>
+          <path fill="#62a957" d="M720,272 L724,290 L790,304 L802,278 L768,262 L740,254 Z"/>
+          <path fill="#d8ebd0" d="M714,246 L740,254 L748,272 L720,272 Z"/>
+          <path fill="#9fce92" d="M706,186 L770,178 L778,216 L714,246 Z"/>
+          <path fill="#62a957" d="M698,160 L760,120 L788,148 L770,178 L706,186 Z"/>
+          <path fill="#2e7d29" d="M752,214 L790,208 L788,226 L750,230 Z"/>
+          <path fill="#62a957" d="M782,206 L793,208 L791,224 L780,222 Z"/>
+          <path fill="#2e7d29" d="M778,180 L792,182 L790,206 L778,202 Z"/>
+          <path fill="#9fce92" d="M772,110 L786,110 L786,146 L772,144 Z"/>
+          <path fill="#62a957" d="M786,110 L800,120 L798,144 L786,146 Z"/>
+          <path fill="#9fce92" d="M796,80 L822,64 L836,96 L818,128 L800,120 Z"/>
+          <path fill="#2e7d29" d="M786,146 L820,150 L818,163 L786,161 Z"/>
+          <path fill="#2e7d29" d="M786,161 L806,163 L804,177 L786,175 Z"/>
+          <path fill="#62a957" d="M808,158 L818,160 L816,170 L806,168 Z"/>
+          <path fill="#d8ebd0" d="M84,430 L160,418 L196,438 L190,486 L150,506 L100,498 L74,468 Z"/>
+          <path fill="#9fce92" d="M242,494 L256,488 L262,498 L250,506 Z"/>
+          <path fill="#9fce92" d="M268,502 L284,496 L292,508 L276,516 Z"/>
+          <path fill="#9fce92" d="M300,512 L318,506 L326,520 L306,528 Z"/>
+          </g>
+          <rect x="70" y="416" width="130" height="94" fill="none" stroke="#b8b8b8" stroke-width="1"/>
+          <rect x="232" y="482" width="106" height="54" fill="none" stroke="#b8b8b8" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="wlg"><span><i style="background:#ffffff"></i>~$20,000</span><span><i style="background:#d8ebd0"></i>$30,000</span><span><i style="background:#9fce92"></i>$40,000</span><span><i style="background:#62a957"></i>$50,000</span><span><i style="background:#2e7d29"></i>$60,000</span><span><i style="background:#0c4d0b"></i>$70,000</span><span><i style="background:#001f00"></i>$80,000+</span></div>
+      <div class="wibc">Per capita personal income by state, U.S. Census Bureau</div>
+      <table>
+        <tr><td>Total places</td><td>19,495</td></tr>
+        <tr><td>Over 1,000,000</td><td>9</td></tr>
+        <tr><td>Over 500,000</td><td>36</td></tr>
+        <tr><td>Over 100,000</td><td>333</td></tr>
+        <tr><td>Largest</td><td><a class="wl">New York City</a></td></tr>
+        <tr><td>Data source</td><td>U.S. Census</td></tr>
+        <tr><td>Reference year</td><td>2023</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="ctl">
+  <div class="crow">
+    <span class="cv" id="foundBig">0</span><span class="csep">·</span>
+    <span class="cv" id="cCache">0</span><span class="csep">·</span>
+    <span class="cv" id="cBatch">–</span><span class="csep">·</span>
+    <span class="cv" id="cBlocked">0</span>
+    <div class="ctrk"><i id="pBar"></i></div>
+    <span class="cv" id="pPct">0%</span>
+    <span class="cv">cnc</span><select id="concSel" title="Ek saath kitni requests" style="font-size:6.5px;color:#202122;border:.5px solid #a2a9b1;border-radius:2px;padding:0 2px;cursor:pointer;background:#fff;line-height:1.6;font-family:sans-serif"><option value="5">5</option><option value="8">8</option><option value="10">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option><option value="30">30</option><option value="40">40</option></select>
+    <button class="tb" id="runAllBottom" title="Run all saved URLs" style="white-space:nowrap;flex:0 0 auto;color:#202122;border-color:#a2a9b1;font-weight:600;">RUN ALL</button>
+    <span class="csep">|</span>
+    <button class="tb" id="copyBtn">c</button>
+    <button class="tb" id="downloadBtn">d</button>
+    <button class="tb" id="exportBtn">e</button>
+    <label for="fileInput" class="tb">f</label>
+    <input type="file" id="fileInput" accept=".txt,text/plain">
+    <button class="tb" id="addBulkBtn">a</button>
+    <button class="tb" id="addCollBtn">+</button>
+    <button class="tb" id="resumeBtn">r</button>
+    <button class="tb" id="clearDbBtn">x</button>
+    <button class="tb" id="clearPermBtn">X</button>
+    <a href="#" class="tb" id="openTab">o</a>
+    <button class="tb" id="reloadBtn">R</button>
+    <button class="tb" id="wipeBtn">w</button>
+    <span class="cv" id="fileName"></span>
+    <span class="cv" id="cacheCount"></span>
+  </div>
+  <div id="newCollForm" class="hide">
+    <div class="crow">
+      <input type="text" id="collName" class="tin" placeholder="name">
+      <button class="tb" id="saveCollBtn">s</button>
+      <button class="tb" id="cancelCollBtn">×</button>
+      <span class="cv" id="permCount">0</span>
+    </div>
+    <textarea id="permInput" class="tta" placeholder="urls"></textarea>
+  </div>
+  <div id="tempMode" class="hide">
+    <textarea id="urlInput" class="tta" placeholder="urls"></textarea>
+    <div class="crow"><span class="cv" id="urlCount">0</span><button class="tb" id="scrapeBtn">go</button></div>
+  </div>
+  <div class="clog" id="log"></div>
+  <div class="cv" id="status"></div>
+  <div id="collectionsWrap"></div><div id="permGroups"></div><div id="permMode"></div>
+  <span class="hide" id="blockedBanner"><span id="blockMsg"></span></span>
+  <span class="hide" id="heroSub"></span><span class="hide" id="live"></span>
+  <span class="hide" id="pLbl"></span><span class="hide" id="tabPerm"></span><span class="hide" id="tabTemp"></span>
+</div>
+
+<script src="popup.js"></script>
+<script src="wikigroups.js"></script>
+</body>
+</html>
